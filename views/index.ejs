@@ -1,0 +1,28 @@
+<%- include partials/components/header.ejs %>
+<body style="height: 1000px;">
+<%- include partials/components/main_nav.ejs %>
+
+  <!--Main Content-->
+  <% if(title == "Home") { %>
+    <%- include partials/content/home.ejs %>
+  <% } %>
+  <% if(title == "About") { %>
+    <%- include partials/content/about.ejs %>
+  <% } %>
+  <% if(title == "Projects") { %>
+    <%- include partials/content/projects.ejs %>
+  <% } %>
+  <% if(title == "Services") { %>
+    <%- include partials/content/services.ejs %>
+  <% } %>
+  <% if(title == "Contact Me") { %>
+    <%- include partials/content/contactme.ejs %>
+  <% } %>
+  
+</body>
+
+
+  <%- include partials/components/bottom_nav.ejs %>
+
+  <%- include partials/components/footer.ejs %>
+

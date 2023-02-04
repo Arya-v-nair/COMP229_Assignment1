@@ -1,0 +1,12 @@
+<%- include partials/components/header.ejs %>
+
+<%- include partials/components/main_nav.ejs %>
+<div class="container">
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+</div>
+
+<%- include partials/components/bottom_nav.ejs %>
+
+<%- include partials/components/footer.ejs %>

@@ -1,0 +1,334 @@
+
+.project-div {
+  flex: 1;
+  overflow: auto;
+}
+
+.nav-bold{
+  font-weight: bold;
+}
+
+body{
+    background-image: url("/Assets/images/portfolio_background.gif");
+    background-size: cover;
+    align-items : center;
+    flex: 1;
+    overflow: auto;
+     
+
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Background image is fixed in the viewport so that it doesn't move when 
+    the content's height is greater than the image's height */
+    background-attachment: fixed;
+
+   
+}
+.navbar_color {
+    background: #1ca9c9;
+    color:white;
+}
+
+.about_div {
+    color : white;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    text-align: center;
+}
+.about_image {
+    max-width: 100%;
+    height: auto;
+}
+.about_padding {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+.about_content {
+    margin-left: auto;
+    margin-right: auto;
+}
+.about_justify {
+    text-align: justify!important;
+}
+.theme-color {
+    color: #008080;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.name_font_style{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+    font-weight: bold;
+    border: 5px;
+    border-color: black;
+    margin-left: 270px;
+    margin-right: 250px;
+    font-size: 24px;
+}
+.resume-light-grey{
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+.resume-padding-large{
+    padding: 12px 24px!important;
+}
+.resume-margin-top{
+    margin-top: 16px!important;
+}
+.resume-button{
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-bar {
+    padding-top: 8px;
+}
+.resume_link {
+    color : blue;
+    margin-left: 340px;
+    margin-right: 300px;
+}
+.about_div1 {
+    background-color: #81D8D0;
+    color: black;
+    height: 300px;
+    font-weight: bold;
+    text-align: center;
+    align-items : center;
+    opacity: 0.7;
+}
+.about_project_div {
+  background-color: #81D8D0;
+  opacity: 0.9;
+  color:black;
+}
+.services_div{
+  background-color: #81D8D0;
+  opacity: 0.9;
+  color:black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.about-align{
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 40%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 60%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .project-style{
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-family: Arial;
+  margin-left: 70px;
+  }
+  .projects-size-box{
+    box-sizing: content-box;
+  }
+
+
+
+
+  /* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Kalam&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapper {
+    max-width: 850px;
+    margin: 50px auto;
+    height: 900px;
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: 5px 25px 35px #3535356b;
+}
+
+.wrapper .bg-yellow {
+    background-color: #7FFFD4;
+    height: 100%;
+    width: 70%;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+
+.wrapper .bg-yellow .text-white {
+    font-size: 3rem;
+}
+
+.wrapper .bg-yellow .cursive {
+    font-family: 'Kalam', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.wrapper .contact-form {
+    width: 100%;
+    padding: 40px 80px 40px 50px;
+}
+
+.wrapper .contact-form .h3 {
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+.wrapper .contact-form label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.wrapper .contact-form textarea {
+    height: 120px;
+    width : 400px!important;
+}
+
+.wrapper .contact-form .form-control {
+    background-color: #e7e7e7;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    border-top: 1px solid #bbb;
+}
+
+
+.wrapper .contact-form .btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.wrapper .contact-form .btn.btn-default {
+    color: #F50057;
+}
+
+
+.wrapper .contact-form .btn.btn-primary {
+    background: #F50057;
+    border: none;
+    padding: 8px 18px;
+    box-shadow: 0 8px 12px #3535356b;
+}
+
+.wrapper .contact-form .btn.btn-primary:hover {
+    background-color: #f50056e5;
+}
+
+.modal .modal-content .modal-header .fas {
+    color: #F50057;
+}
+
+@media(max-width: 900.5px) {
+    .wrapper {
+        margin: 20px;
+    }
+}
+
+@media(max-width: 575.5px) {
+
+    .wrapper .contact-form {
+        padding: 40px;
+    }
+
+    .wrapper .bg-yellow {
+        padding-left: 30px;
+    }
+}
+
+@media(max-width: 496px) {
+
+    .wrapper .bg-yellow {
+        display: none;
+    }
+
+}
+
+@media(max-width: 350px) {
+
+    .wrapper {
+        height: 570px;
+    }
+
+    .wrapper .contact-form {
+        padding: 20px;
+    }
+}
+.contact-heading{
+  font-family: cursive;
+  font-size: 16px;
+  font-weight:bold;
+}
+.services-heading{
+  font-size: 28px;
+  color:white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.img-size{
+  width:119px;
+  height:210px;
+}
+
