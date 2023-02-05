@@ -1,3 +1,11 @@
+/*
+Assignment - 1
+Arya Vijimon Nair
+Student ID : 301249594
+Course CODE : COMP229
+Course name : Web Application Development
+file name : index.js
+*/
 const express = require('express');
 const app = express();
 const port = 3000;
