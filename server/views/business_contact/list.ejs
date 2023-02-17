@@ -1,0 +1,65 @@
+<%- include ../partials/components/header.ejs %>
+
+<%- include ../partials/components/main_nav.ejs %>
+
+
+<!-- Main Content -->
+<main class="container">
+  <div class="row">
+    <div class="offset-md-1 col-md-11">
+      <h1 class="whiteheading"><%= title %></h1>
+
+      <% if(typeof displayName == 'string' && displayName) { %>
+      <a href="/business-contact/add" class="btn btn-primary" role="button">
+        <i class="fas fa-plus-circle"></i> Add business contact information</a>
+      <% } %>
+      <br>
+
+      <table style="position:relative; top:10px;" id="businessSortedTable" class="table table-sortable table-bordered table-striped table-dark table-hover">
+        <!-- Header Row-->
+        <tr class="d-flex">
+          <% if(typeof displayName == 'string' && displayName) { %>
+          <th class="text-center col-3">Name</th>
+          <th class="text-center col-2">Contact Number</th>
+          <th class="text-center col-3">Email</th>
+
+          <% } else { %>
+          <th class="text-center col-4">Name</th>
+          <th class="text-center col-4">Contact Number</th>
+          <th class="text-center col-4">Email</th>
+          <% } %>
+        </tr>
+
+
+        <% for(let count = 0; count < businessContactList.length; count++) { %>
+        <tr class="d-flex">
+          <% if(typeof displayName == 'string' && displayName) { %>
+          <td class="text-center col-3"><%= businessContactList[count].name %></td>
+          <td class="text-center col-2"><%= businessContactList[count].contact_number %></td>
+          <td class="text-center col-3"><%= businessContactList[count].email %></td>
+
+          <td class="text-center col-2">
+            <a href="/business-contact/edit/<%= businessContactList[count]._id %>" class="btn btn-primary btn-sm">
+              <i class="fas fa-pencil-alt"></i> Update</a>
+          </td>
+          <td class="text-center col-2">
+            <a href="/business-contact/delete/<%= businessContactList[count]._id %>" class="btn btn-danger btn-sm">
+              <i class="fas fa-trash-alt"></i> Delete</a>
+          </td>
+          <% } else { %>
+          <td class="text-center col-4"><%= businessContactList[count].name %></td>
+          <td class="text-center col-4"><%= businessContactList[count].contact_number %></td>
+          <td class="text-center col-4"><%= businessContactList[count].email %></td>
+
+          <% } %>
+        </tr>
+        <% } %>
+      </table>
+
+    </div>
+  </div>
+</main>
+
+<%- include ../partials/components/bottom_nav.ejs %>
+
+<%- include ../partials/components/footer.ejs %>

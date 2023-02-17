@@ -1,19 +1,14 @@
 #!/usr/bin/env node
-/*
-Assignment - 1
-Arya Vijimon Nair
-Student ID : 301249594
-Course CODE : COMP229
-Course name : Web Application Development
-file name : server.js
-*/
+
 /**
  * Module dependencies.
  */
 
-var app = require('./app');
+var app = require('./server/config/app');
 var debug = require('debug')('comp229-week3:server');
 var http = require('http');
+
+const uri = process.env.MONGODB_URI;
 
 /**
  * Get port from environment and store in Express.

@@ -1,0 +1,41 @@
+<%- include ../partials/components/header.ejs %>
+<%- include ../partials/components/main_nav.ejs %>
+<main class="container">
+  <div class="row">
+    <h1><%=title%> </h1>
+    <form class="form" method="POST">
+      <div class ="col-md-offset-3 col-md-6">
+
+        <div class="form-group">
+          <label for="nameTextField" class="whiteheading">Name</label>
+          <input type="text" class="form-control" id="nameTextField" placeholder="Enter Business Contact Name" name="name" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="numberTextField" class="whiteheading">Contact Number</label>
+          <input type="text" class="form-control" id="numberTextField" placeholder="Enter Business Contact Number" name="contact_number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="emailTextField" class="whiteheading">Email</label>
+          <input type="text" class="form-control" id="emailTextField" placeholder="Enter email" name="email" required>
+        </div>
+
+      </div>
+
+  </div>
+
+
+  <button style="position: relative; top: 60px; right: 10px;" type="submit" class="btn btn-primary"><i class="fas fa-edit"></i>Submit</button>
+  <a style="position: relative; top: 60px; " href="/business-contact" class="btn btn-warning"><i class="fas fa-undo"></i>Cancel</a>
+
+  </form>
+  </div>
+</main>
+
+
+
+
+<%- include ../partials/components/bottom_nav.ejs %>
+<%- include ../partials/components/footer.ejs %>
